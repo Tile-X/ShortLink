@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CoolRequestEnvironmentPersistentComponent">
+    <option name="environments" value="[{&quot;environmentName&quot;:&quot;shortlink-project&quot;,&quot;hostAddress&quot;:&quot;http://localhost:8000&quot;,&quot;id&quot;:&quot;428be519-79d7-46c9-9be2-d51f81819ce4&quot;,&quot;header&quot;:[],&quot;urlParam&quot;:[],&quot;formData&quot;:[],&quot;formUrlencoded&quot;:[]},{&quot;environmentName&quot;:&quot;shortlink-admin&quot;,&quot;hostAddress&quot;:&quot;http://localhost:8001&quot;,&quot;id&quot;:&quot;9b4ade05-2724-4bbe-8f14-d29bde4b4a0d&quot;,&quot;header&quot;:[],&quot;urlParam&quot;:[],&quot;formData&quot;:[],&quot;formUrlencoded&quot;:[]}]" />
+    <selectId>9b4ade05-2724-4bbe-8f14-d29bde4b4a0d</selectId>
+  </component>
+</project>

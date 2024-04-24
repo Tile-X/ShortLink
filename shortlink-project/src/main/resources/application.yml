@@ -1,0 +1,44 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    # ShardingSphere 对 Driver 自定义，实现分库分表等隐藏逻辑
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    # ShardingSphere 配置文件路径
+    url: jdbc:shardingsphere:classpath:shardingsphere-config.yml
+    hikari:
+      connection-test-query: select 1
+      connection-timeout: 20000
+      idle-timeout: 300000
+      maximum-pool-size: 5
+      minimum-idle: 5
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: icat_redis
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: del_flag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: short-link_project-service_stats-save_pg
+    topic: short-link_project-service_topic
+    send-message-timeout: 3000
+    retry-times-when-send-failed: 1
+    retry-times-when-send-async-failed: 1
+  consumer:
+    group: short-link_project-service_stats-save_cg

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="shortlink-common-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/shortlink-common/target/shortlink-common-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
